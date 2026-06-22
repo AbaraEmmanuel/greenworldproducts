@@ -6,6 +6,7 @@
 <title>Green World — Wellness Products &amp; Business Opportunity</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -235,6 +236,19 @@
   </div>
 </section>
 
+<!-- ============ PROMOTIONAL IMAGE BANNER ============ -->
+<section class="promo-banner" id="promo">
+  <div class="container">
+    <div class="promo-image-wrapper" id="promoImageWrapper">
+      <!-- Image will be loaded here by JavaScript -->
+      <div class="promo-loading" id="promoLoading">
+        <div class="promo-spinner"></div>
+        <p>Loading promotion...</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PRODUCTS ============ -->
 <section class="products section-pad" id="products">
   <div class="container">
@@ -450,6 +464,110 @@
   </div>
 </section>
 
+<!-- ============ NETWORK / OPPORTUNITY SECTION ============ -->
+<section class="opportunity-section section-pad" id="network">
+  <div class="container">
+    <div class="opportunity-badge">
+      <span>💎 EARN WHILE YOU HEAL</span>
+    </div>
+    
+    <div class="opportunity-head">
+      <h2 class="section-title">Turn your health journey into <em>wealth</em></h2>
+      <p class="opportunity-sub">
+        At Green World, we believe you shouldn't have to choose between being healthy and building wealth. 
+        <strong>You can do both.</strong> Join thousands of South Africans who are transforming their lives 
+        by sharing wellness products they already love.
+      </p>
+    </div>
+
+    <div class="opportunity-grid">
+      <div class="opportunity-card">
+        <div class="opportunity-icon">💰</div>
+        <h4>Earn Extra Income</h4>
+        <p>Make money by sharing products you already use and believe in. Start earning from day one with our simple compensation plan.</p>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-icon">🌿</div>
+        <h4>Stay Healthy First</h4>
+        <p>You're not selling — you're sharing what works for you. Your health improves first, and others benefit from your experience.</p>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-icon">🤝</div>
+        <h4>Join a Community</h4>
+        <p>You're never alone. Get training, mentorship, and support from a network of successful partners who want to see you win.</p>
+      </div>
+      
+      <div class="opportunity-card">
+        <div class="opportunity-icon">🚀</div>
+        <h4>Build Your Future</h4>
+        <p>This isn't just a side hustle — it's a legitimate business opportunity with real growth potential. Build something that lasts.</p>
+      </div>
+    </div>
+
+    <!-- Success Story / Social Proof -->
+    <div class="opportunity-testimonial">
+      <div class="opportunity-testimonial-inner">
+        <div class="testimonial-quote">"</div>
+        <blockquote>
+          I started using Green World products for my health, and within 3 months I was earning an extra R8,000 per month 
+          just by sharing what worked for me. Now I'm building a team and my income keeps growing. This changed my life.
+        </blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">👩</div>
+          <div>
+            <div class="testimonial-name">Thandi M.</div>
+            <div class="testimonial-role">Green World Partner · Johannesburg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="opportunity-stats">
+      <div class="stat-item">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Active Partners in SA</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-number">R 25M+</div>
+        <div class="stat-label">Paid to Partners</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <div class="stat-number">4.8★</div>
+        <div class="stat-label">Partner Satisfaction</div>
+      </div>
+    </div>
+
+    <!-- CTA - Join WhatsApp Group -->
+    <div class="opportunity-cta">
+      <div class="opportunity-cta-content">
+        <div class="opportunity-cta-icon">👥</div>
+        <h3>Ready to become one of the <em>millionaires</em>?</h3>
+        <p>
+          Join our exclusive WhatsApp group where we share how the Green World opportunity works, 
+          success strategies, and help you get started on your journey to financial freedom.
+        </p>
+        <div class="opportunity-cta-buttons">
+          <a href="https://chat.whatsapp.com/YOUR_GROUP_INVITE_LINK" target="_blank" rel="noopener" class="btn-whatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3C7.03 3 3 7.03 3 12C3 13.66 3.45 15.22 4.24 16.55L3 21L7.6 19.8C8.9 20.55 10.4 21 12 21Z"/>
+            </svg>
+            Join WhatsApp Group
+          </a>
+          <a href="#products" class="btn-secondary">Explore Products First</a>
+        </div>
+        <p class="opportunity-cta-note">
+          ⚡ Limited spots available · Join now and get started today
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ FOOTER ============ -->
 <footer id="network">
   <div class="container">
@@ -467,28 +585,26 @@
         <a href="#about">About</a>
         <a href="#products">Products</a>
         <a href="#process">The Process</a>
-        <a href="#">Networking</a>
+        <a href="#network">Networking</a>
       </div>
       <div class="footer-col">
         <h6>Support</h6>
-        <a href="#">Contact Us</a>
-        <a href="#">Shipping</a>
-        <a href="#">FAQs</a>
-        <a href="#">Usage Guidance</a>
+        <a href="https://wa.me/27714058061" target="_blank" rel="noopener noreferrer">Contact Us</a>
+
       </div>
       <div class="footer-col">
         <h6>Connect</h6>
-        <a href="#">Johannesburg, South Africa</a>
-        <a href="#">hello@greenworld.co.za</a>
-        <a href="#">+27 00 000 0000</a>
+        <a href="#">Pretoria, GP</a>
+        <a href="#">greenworldproducts4sale@gmail.com</a>
+        <a href="#">+27714058061</a>
       </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 Green World. All rights reserved.</span>
       <div class="footer-socials">
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M14 9H17V5H14C11.8 5 10 6.8 10 9V11H8V15H10V21H14V15H17L18 11H14V9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></a>
-        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3C7.03 3 3 7.03 3 12C3 13.66 3.45 15.22 4.24 16.55L3 21L7.6 19.8C8.9 20.55 10.4 21 12 21Z" stroke="currentColor" stroke-width="1.3"/></svg></a>
+        <!-- <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none"><path d="M14 9H17V5H14C11.8 5 10 6.8 10 9V11H8V15H10V21H14V15H17L18 11H14V9Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg></a> -->
+        <a href="https://wa.me/27714058061" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21C16.97 21 21 16.97 21 12C21 7.03 16.97 3 12 3C7.03 3 3 7.03 3 12C3 13.66 3.45 15.22 4.24 16.55L3 21L7.6 19.8C8.9 20.55 10.4 21 12 21Z" stroke="currentColor" stroke-width="1.3"/></svg></a>
       </div>
     </div>
   </div>
@@ -564,6 +680,140 @@
       }
     }
   });
+</script>
+
+<script>
+  // ============ LOAD PROMOTIONAL IMAGE FROM SUPABASE ============
+  
+  // Your Supabase credentials
+  const SUPABASE_URL = 'https://kdkumlbmgjhadmemgteb.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imtka3VtbGJtZ2poYWRtZW1ndGViIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxMjU0NjEsImV4cCI6MjA5NzcwMTQ2MX0.Hafw5l-nof3QH7pnUDzyQ1b1a9YfcCX_7n--m7C6QIE';
+
+  (function loadPromotion() {
+    const wrapper = document.getElementById('promoImageWrapper');
+    
+    // Show loading state
+    wrapper.innerHTML = `
+      <div class="promo-loading" id="promoLoading">
+        <div class="promo-spinner"></div>
+        <p>Loading promotion...</p>
+      </div>
+    `;
+
+    function showError(message, details = '') {
+      wrapper.innerHTML = `
+        <div class="promo-empty">
+          <div class="promo-empty-icon">⚠️</div>
+          <p>${message}</p>
+          ${details ? `<small style="font-size:0.7rem;opacity:0.5;">${details}</small>` : ''}
+        </div>
+      `;
+    }
+
+    function showNoPromotion() {
+      wrapper.innerHTML = `
+        <div class="promo-empty">
+          <div class="promo-empty-icon">📢</div>
+          <p>No active promotions</p>
+          <small style="font-size:0.7rem;opacity:0.5;">Add a promotion in Supabase</small>
+        </div>
+      `;
+    }
+
+    function displayPromotion(promo) {
+      const img = document.createElement('img');
+      img.src = promo.image_url;
+      img.alt = promo.alt_text || promo.title || 'Promotion';
+      img.loading = 'lazy';
+      
+      img.onerror = function() {
+        wrapper.innerHTML = `
+          <div class="promo-empty">
+            <div class="promo-empty-icon">🖼️</div>
+            <p>Image not found</p>
+            <small style="font-size:0.7rem;opacity:0.5;">${promo.image_url}</small>
+          </div>
+        `;
+      };
+      
+      if (promo.link_url) {
+        const link = document.createElement('a');
+        link.href = promo.link_url;
+        link.target = promo.link_url.startsWith('http') ? '_blank' : '_self';
+        link.appendChild(img);
+        wrapper.innerHTML = '';
+        wrapper.appendChild(link);
+      } else {
+        wrapper.innerHTML = '';
+        wrapper.appendChild(img);
+      }
+    }
+
+    async function fetchPromotion() {
+      try {
+        // Check if Supabase is available
+        if (typeof window.supabase === 'undefined' || !window.supabase.createClient) {
+          showError('Supabase library not loaded', 'Please check your internet connection and refresh the page.');
+          return;
+        }
+
+        const { createClient } = window.supabase;
+        const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+        
+        // Test the connection first
+        const { data, error } = await supabase
+          .from('promotions')
+          .select('*')
+          .eq('is_active', true)
+          .order('display_order', { ascending: true })
+          .limit(1);
+        
+        if (error) {
+          console.error('Supabase error:', error);
+          showError('Database error', error.message);
+          return;
+        }
+        
+        if (data && data.length > 0) {
+          displayPromotion(data[0]);
+        } else {
+          showNoPromotion();
+        }
+        
+      } catch (err) {
+        console.error('Error loading promotion:', err);
+        showError('Failed to load promotion', err.message || 'Unknown error');
+      }
+    }
+
+    // Check if Supabase is ready, with retry
+    let attempts = 0;
+    const maxAttempts = 10;
+
+    function tryLoad() {
+      attempts++;
+      
+      if (typeof window.supabase !== 'undefined' && window.supabase.createClient) {
+        // Supabase is ready
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', fetchPromotion);
+        } else {
+          fetchPromotion();
+        }
+      } else if (attempts < maxAttempts) {
+        // Wait and try again
+        console.log(`Waiting for Supabase... attempt ${attempts}/${maxAttempts}`);
+        setTimeout(tryLoad, 500);
+      } else {
+        // Give up
+        showError('Supabase library not loaded', 'Please refresh the page or check your internet connection.');
+      }
+    }
+
+    // Start the loading process
+    tryLoad();
+
+  })();
 </script>
 
 </body>
