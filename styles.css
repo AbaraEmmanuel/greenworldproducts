@@ -92,7 +92,7 @@
     letter-spacing: 0.02em;
     color: var(--cream);
   }
-  .nav-logo{ width:34px; height:34px; flex-shrink:0; object-fit: contain; }
+  .nav-logo{ width:70px; height:70px; flex-shrink:0; object-fit: contain; }
   .nav-links{
     display:flex;
     align-items:center;
@@ -1568,7 +1568,7 @@
     color: var(--cream);
     margin-bottom: 18px;
   }
-  .footer-mark svg, .footer-logo{ width:28px; height:28px; object-fit: contain; }
+  .footer-mark svg, .footer-logo{ width:70px; height:70px; object-fit: contain; }
   .footer-grid p{
     color: var(--leaf-pale);
     font-size: 0.9rem;
@@ -1656,5 +1656,5 @@
   }
   @media (max-width: 380px){
     .nav-mark{ font-size: 1.25rem; gap:9px; }
-    .nav-logo{ width:28px; height:28px; }
+    .nav-logo{ width:70px; height:70px; }
   }
