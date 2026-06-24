@@ -1043,6 +1043,31 @@
       .nav-cta-mobile {
         margin: 20px 22px 28px;
       }
+
+      /* ===== NAV OVERLAP FIX ===== */
+      nav.nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: var(--forest-deep); /* ensure solid bg, no bleed-through */
+      }
+
+      /* Make sure grain doesn't layer over nav */
+      .grain {
+        z-index: 0;
+        pointer-events: none;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding-top: 56px !important;
+        }
+        .toolbar {
+          top: 56px;
+        }
+      }
     }
   </style>
 </head>
