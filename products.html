@@ -11,6 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,400..500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* ===== FIX: Remove white strip at top ===== */
+    body {
+      padding-top: 0 !important;
+    }
+
     /* ===== products.html specific overrides & additions ===== */
 
     /* ---- Page header / hero ---- */
@@ -527,7 +532,7 @@
         display: none;
       }
       body {
-        padding-top: 56px;
+        padding-top: 56px !important;
       }
       .toolbar {
         top: 56px;
